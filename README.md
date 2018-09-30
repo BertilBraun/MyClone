@@ -1,13 +1,15 @@
 # MyClone
-About:
+## About:
 
   This was the first larger project I've written in c++ OpenGL using SFML and glm.
   
   It's a basic MineCraft clone, having implemented:
       
+      Full menus with multiple world's being able to be saved
       infinit terrain using perlin noise
       multiple biomes
       threaded chunkLoading
+      loading and saving of rendered chunks
       terrain collision detection
       lighting calculations per block (disabled because of unfindable bug in light updates)
       full player invenory
@@ -17,7 +19,7 @@ About:
   I'll appreciate every feedback and/or commit, a lot!
   You can download the Installer folder, and install it (windows) to try it out :)
 
-Controls:
+## Controls:
 	
 	  W/A/S/D to move arround
 	  Shift to sprint forwards
@@ -28,7 +30,7 @@ Controls:
 	  C to open the crafting grid
 	
 	
-Requirements:
+## Requirements:
 	
     Chunk saving requires you to give full Read/Write Permissions 
     to the Saves folder (shortcut on desktop)
