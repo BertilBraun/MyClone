@@ -15,6 +15,7 @@ About:
       easy to add blocks and recepies   
 
   I'll appreciate every feedback and/or commit, a lot!
+  You can download the Installer folder, and install it (windows) to try it out :)
 
 Controls:
 	
