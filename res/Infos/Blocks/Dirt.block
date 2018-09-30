@@ -1,0 +1,29 @@
+Name
+Dirt
+
+Id
+2
+
+TexAll
+2 0
+
+invTexture
+2 0
+
+Opaque
+1
+
+MeshType
+0
+
+Solid
+1
+
+isBlock
+1
+
+stackSize
+64
+
+isLeave
+0

@@ -1,0 +1,32 @@
+Id
+1
+
+TexTop
+0 0
+
+TexSide
+1 0
+
+TexBottom
+2 0
+
+Opaque
+1
+
+MeshType
+0
+
+Solid
+1
+
+isBlock
+1
+
+stackSize
+64
+
+isLeave
+0
+
+breakTime
+1.5

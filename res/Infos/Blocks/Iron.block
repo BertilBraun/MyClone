@@ -1,0 +1,26 @@
+Id
+15
+
+TexAll
+0 1
+
+Opaque
+1
+
+MeshType
+0
+
+BlockType
+0
+
+Solid
+1
+
+stackSize
+64
+
+breakTime
+1
+
+drop
+m 2 1

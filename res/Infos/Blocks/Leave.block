@@ -1,0 +1,29 @@
+Name
+Leave
+
+Id
+5
+
+TexAll
+6 0
+
+invTexture
+5 0
+
+Opaque
+0
+
+MeshType
+0
+
+Solid
+1
+
+isBlock
+1
+
+stackSize
+64
+
+BlockType
+2

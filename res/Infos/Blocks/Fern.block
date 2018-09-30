@@ -1,0 +1,26 @@
+Id
+17
+
+TexAll
+3 1
+
+Opaque
+0
+
+MeshType
+1
+
+Solid
+0
+
+isBlock
+1
+
+stackSize
+64
+
+BlockType
+2
+
+breakTime
+0.1

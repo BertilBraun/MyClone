@@ -1,0 +1,29 @@
+Name
+Water
+
+Id
+8
+
+TexAll
+9 0
+
+invTexture
+7 0
+
+Opaque
+0
+
+MeshType
+0
+
+Solid
+0
+
+isBlock
+1
+
+stackSize
+64
+
+BlockType
+1

@@ -1,0 +1,26 @@
+Name
+DeadBush
+
+Id
+13
+
+TexAll
+14 0
+
+Opaque
+0
+
+MeshType
+1
+
+Solid
+0
+
+isBlock
+1
+
+stackSize
+64
+
+BlockType
+2

@@ -1,0 +1,29 @@
+Name
+Stone
+
+Id
+3
+
+TexAll
+3 0
+
+invTexture
+3 0
+
+Opaque
+1
+
+MeshType
+0
+
+Solid
+1
+
+isBlock
+1
+
+stackSize
+64
+
+isLeave
+0

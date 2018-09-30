@@ -1,0 +1,29 @@
+Name
+Cobble
+
+Id
+7
+
+TexAll
+8 0
+
+invTexture
+6 0
+
+Opaque
+1
+
+MeshType
+0
+
+Solid
+1
+
+isBlock
+1
+
+stackSize
+64
+
+isLeave
+0
