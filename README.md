@@ -19,10 +19,6 @@
   I'll appreciate every feedback and/or commit, a lot!
   You can download the Installer folder, and install it (windows) to try it out :)
   
-![scs1](https://user-images.githubusercontent.com/25801046/46263624-df85bd80-c511-11e8-9277-75e937dff4eb.png)
-![scs2](https://user-images.githubusercontent.com/25801046/46263625-e01e5400-c511-11e8-827a-0ba29492525b.png)
-![scs3](https://user-images.githubusercontent.com/25801046/46263626-e01e5400-c511-11e8-8448-df7eb33e74d3.png)
-
 ## Controls:
 	
 	  W/A/S/D to move arround
@@ -38,3 +34,9 @@
 	
     Chunk saving requires you to give full Read/Write Permissions 
     to the Saves folder (shortcut on desktop)
+
+## Screenshots:
+
+![scs1](https://user-images.githubusercontent.com/25801046/46263624-df85bd80-c511-11e8-9277-75e937dff4eb.png)
+![scs2](https://user-images.githubusercontent.com/25801046/46263625-e01e5400-c511-11e8-827a-0ba29492525b.png)
+![scs3](https://user-images.githubusercontent.com/25801046/46263626-e01e5400-c511-11e8-8448-df7eb33e74d3.png)
