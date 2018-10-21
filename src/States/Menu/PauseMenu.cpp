@@ -4,10 +4,9 @@
 #include "Application.h"
 #include "World/World.h"
 
-PauseMenu::PauseMenu(Application& applic, World* world) :
-	StateBase(applic),
+PauseMenu::PauseMenu(Application& applic, World* world, StateBase* parent) :
+	StateBase(applic, parent),
 	escape(sf::Keyboard::Key::Escape, 0.2f),
-	background(glm::vec2(0.5f, 0.5f), glm::vec2(1, 1), "GUI/background.jpg", (*app->getWindow())),
 	loading(glm::vec2(0.5f, 0.5f), glm::vec2(1, 1), "GUI/dirtBackground.jpg", (*app->getWindow())),
 	world(world)
 { 
@@ -36,7 +35,7 @@ void PauseMenu::update(float deltaTime) {
 
 void PauseMenu::render(MasterRenderer & renderer) {
 
-	background.draw(renderer);
+	parent->render(renderer);
 
 	for (Button& button : buttons)
 		button.draw(renderer);

@@ -9,8 +9,9 @@ class Camera;
 
 class StateBase {
 public:
-	StateBase(Application& app)
-	: app(&app)
+	StateBase(Application& app, StateBase* parent = nullptr)
+	:   app(&app),
+		parent(parent)
 	{ }
 
 	virtual ~StateBase()  = default;
@@ -27,6 +28,7 @@ public:
 
 protected:
 	Application* app;
+	StateBase* parent;
 	bool updateCamera = false;
 };
 

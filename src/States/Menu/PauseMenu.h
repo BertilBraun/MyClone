@@ -10,7 +10,7 @@ class World;
 
 class PauseMenu : public StateBase {
 public:
-	PauseMenu(Application& applic, World* world);
+	PauseMenu(Application& applic, World* world, StateBase* parent);
 	~PauseMenu();
 
 	void handleInput(float deltaTime, const Camera& camera) override;
@@ -25,7 +25,7 @@ public:
 private:
 	std::vector<Button> buttons;
 	ToggleKey escape;
-	TextureComponent background, loading;
+	TextureComponent loading;
 	World* world;
 	bool returning = false;
 };

@@ -36,7 +36,7 @@ void StatePlaying::handleInput(float deltaTime, const Camera& camera) {
 			player.KeyboardInput(camera);
 
 			if (escape.isKeyPressed())
-				app->pushState<PauseMenu>(*app, &world);
+				app->pushState<PauseMenu>(*app, &world, this);
 
 			else if (inventory.isKeyPressed()) {
 				state = PlayStates::INVENTORY;
