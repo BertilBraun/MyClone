@@ -7,6 +7,7 @@
 #include "DataBase/DataBase.h"
 #include "Texture/TextureAtlas.h"
 #include "Math/NoiseGenerator.h"
+#include "Utils/FPSCounter.h"
 
 #include "defines.h"
 
@@ -25,6 +26,7 @@ Application::Application()
 
 void Application::runLoop() {
 	sf::Clock Timer;
+	FPSCounter FPSCount;
 
 	while (getWindow()->isOpen() && !states.empty()) {
 

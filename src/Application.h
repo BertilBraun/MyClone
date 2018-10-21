@@ -7,8 +7,6 @@
 
 #include "Extern/Context.h"
 #include "Entity/Camera.h"
-#include "Utils/FPSCounter.h"
-
 
 class Application {
 public:
@@ -36,7 +34,6 @@ private:
 
 	std::stack<std::unique_ptr<StateBase>> states;
 
-	FPSCounter FPSCount;
 	Context context;
 	Camera camera;
 	MasterRenderer masterRenderer;
