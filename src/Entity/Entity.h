@@ -36,7 +36,7 @@ struct MoveEntity : public Entity {
 	int getHealth();
 
 protected:
-	bool onGround = false, swimming = false;
+	bool onGround = false, swimming = false, canFly = false;
 	glm::vec3 vel = glm::vec3(0);
 	AABB box;
 	float health = MAX_HP, heighestPoint = 0;

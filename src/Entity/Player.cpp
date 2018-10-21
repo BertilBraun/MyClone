@@ -65,6 +65,8 @@ Player::~Player() {
 
 void Player::KeyboardInput(const Camera& cam) {
 	
+	ToggleKey f(sf::Keyboard::Enter);
+
 	inventory.Update();
 
 	sprinting = (	sf::Keyboard::isKeyPressed(sf::Keyboard::LShift) || 
@@ -73,17 +75,21 @@ void Player::KeyboardInput(const Camera& cam) {
 	glm::vec3	forward = cam.forward,
 				right	= cam.right;
 
-	forward.y = 0;
-	right.y = 0;
+	if (!canFly) {
+		forward.y = 0;
+		right.y = 0;
 
-	forward  = glm::normalize(forward);
-	right    = glm::normalize(right);
-
+		forward = glm::normalize(forward);
+		right = glm::normalize(right);
+	}
+	
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 		if (sprinting && onGround)
 			vel += forward * 1.5f;
+		else if (canFly && sprinting)
+			vel += forward * 5.0f;
 		else
-			vel += forward * 1.0f;
+			vel += forward;
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) 
 		vel -= forward;
@@ -99,9 +105,12 @@ void Player::KeyboardInput(const Camera& cam) {
 			vel.y = JUMP_POWER;
 			onGround = false;
 		}
-		else if (swimming)
+		else if (swimming || canFly)
 			vel.y = JUMP_POWER * 0.3f;
 	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
+		canFly = !canFly;
 
 	if (health <= 0) {
 		world->saveAll();
@@ -117,8 +126,8 @@ void Player::DisplayInformation(MasterRenderer& renderer, const Camera& cam, App
 
 	char s[4096];
 
-	sprintf_s(s, "%.2f x : %.2f y : %.2f z : FH : OnGround %i\n", pos.x, pos.y, pos.z, onGround);
-	sprintf_s(s, "%s%.2f x : %.2f y : %.2f z : SH\n", s, pos.x, pos.y - 1.3f, pos.z);
+	sprintf_s(s, "%.2f x : %.2f y : %.2f z : FH : OnGround %i : CanFly %i\n", pos.x, pos.y, pos.z, onGround, canFly);
+	sprintf_s(s, "%s%i x : %i y : %i z : Standing Block\n", s, (int)pos.x, (int)(pos.y - 1.3f), (int)pos.z);
 	sprintf_s(s, "%s%.2f x : %.2f y : %.2f z\n", s, cam.forward.x, cam.forward.y, cam.forward.z);
 
 	sprintf_s(s, "%s%s", s, world->getBiome(pos.x, pos.z).name.c_str());

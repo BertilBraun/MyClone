@@ -6,7 +6,10 @@ void MoveEntity::Update(float deltaTime, World * world) {
 	
 	vel.x *= 0.7f;
 	vel.z *= 0.7f;
-	if (swimming)
+
+	if (canFly)
+		vel.y *= 0.7f;
+	else if (swimming)
 		vel -= GRAVITY * 0.2f * deltaTime;
 	else
 		vel -= GRAVITY * deltaTime;
@@ -22,7 +25,7 @@ void MoveEntity::Update(float deltaTime, World * world) {
 		pos.y -= updateVel.y;
 		vel.y = 0;
 
-		if (heighestPoint - pos.y > 3 && !swimming) 
+		if (heighestPoint - pos.y > 3 && !swimming && !canFly) 
 			health = std::max(0.0f, health - ((heighestPoint - pos.y) * 0.4f));
 		heighestPoint = pos.y;
 	}
@@ -34,6 +37,9 @@ void MoveEntity::Update(float deltaTime, World * world) {
 	pos.z += updateVel.z;
 	if (collision(world, pos, deltaTime))
 		pos.z -= updateVel.z;
+
+	if (swimming)
+		heighestPoint = pos.y;
 
 	if (pos.y < -10)
 		pos = world->getSpawnPoint();
