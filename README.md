@@ -37,6 +37,6 @@
 
 ## Screenshots:
 
-![scs1](https://user-images.githubusercontent.com/25801046/46263624-df85bd80-c511-11e8-9277-75e937dff4eb.png)
+![shader](https://user-images.githubusercontent.com/25801046/47268692-4831ea00-d554-11e8-9977-2629c107545a.gif)
 ![scs2](https://user-images.githubusercontent.com/25801046/46263625-e01e5400-c511-11e8-827a-0ba29492525b.png)
-![scs3](https://user-images.githubusercontent.com/25801046/46263626-e01e5400-c511-11e8-8448-df7eb33e74d3.png)
+![flyover](https://user-images.githubusercontent.com/25801046/47268750-12413580-d555-11e8-9149-85d7665d3db6.gif)
