@@ -145,8 +145,8 @@ Biome::Biome& TerrainGenerator::getBiome(int x, int z, int cx, int cz) {
 	else if (h > 150)
 		return grass;
 
-	else if (h > 130)
-		return forest;
+	else if (h > 135)
+		return snowForest;
 
 	else if (h > 120)
 		return highLands;

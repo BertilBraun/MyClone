@@ -164,7 +164,7 @@ namespace Biome {
 	}
 
 	HighLands::HighLands(int seed) :
-		Biome(seed, 150, 1000)
+		Biome(seed, 150, 100)
 	{
 		name = "HighLands";
 	}
@@ -186,7 +186,7 @@ namespace Biome {
 	}
 
 	ChunkBlock HighLands::getTopBlock() {
-		return Rand::get().intInRange(0, 10) < 3 ? ID::Dirt : ID::Stone;
+		return Rand::get().intInRange(0, 10) < 3 ? ID::Dirt : ID::Gravel;
 	}
 
 	ChunkBlock HighLands::getPlant() {
