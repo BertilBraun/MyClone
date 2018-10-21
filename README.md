@@ -37,6 +37,6 @@
 
 ## Screenshots:
 
-![shader](https://user-images.githubusercontent.com/25801046/47268692-4831ea00-d554-11e8-9977-2629c107545a.gif)
+![shader](https://user-images.githubusercontent.com/25801046/47268808-af03d300-d555-11e8-940c-7b4fa66aeceb.gif)
 ![scs2](https://user-images.githubusercontent.com/25801046/46263625-e01e5400-c511-11e8-827a-0ba29492525b.png)
 ![flyover](https://user-images.githubusercontent.com/25801046/47268750-12413580-d555-11e8-9149-85d7665d3db6.gif)
