@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Textures\GUI\background.jpg" />
+    <Image Include="res\Textures\GUI\Button.PNG" />
+    <Image Include="res\Textures\GUI\craftBackground.PNG" />
+    <Image Include="res\Textures\GUI\dirtBackground.jpg" />
+    <Image Include="res\Textures\GUI\dirtBackground.png" />
+    <Image Include="res\Textures\GUI\health.PNG" />
+    <Image Include="res\Textures\GUI\hotbar.png" />
+    <Image Include="res\Textures\GUI\HoverButton.PNG" />
+    <Image Include="res\Textures\GUI\invBackground.png" />
+    <Image Include="res\Textures\GUI\noHealth.PNG" />
+    <Image Include="res\Textures\GUI\selctedSlot.PNG" />
+    <Image Include="res\Textures\GUI\Transparent.PNG" />
+    <Image Include="res\Textures\ResourcePacks\DefaultPack.png" />
+    <Image Include="res\Textures\ResourcePacks\InvTextures\Axe.PNG" />
+    <Image Include="res\Textures\ResourcePacks\InvTextures\Iron.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GUI\Button.cpp" />
+    <ClCompile Include="src\GUI\GUIComponent.cpp" />
+    <ClCompile Include="src\GUI\TextBox.cpp" />
+    <ClCompile Include="src\Inventory\Component.cpp" />
+    <ClCompile Include="src\Inventory\Craft2x2.cpp" />
+    <ClCompile Include="src\Inventory\Craft3x3.cpp" />
+    <ClCompile Include="src\Inventory\Crafting\BaseRecepie.cpp" />
+    <ClCompile Include="src\Model\Model.cpp" />
+    <ClCompile Include="src\States\CraftingTable.cpp" />
+    <ClCompile Include="src\AABB\AABB.cpp" />
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\DataBase\DataBase.cpp" />
+    <ClCompile Include="src\Entity\Camera.cpp" />
+    <ClCompile Include="src\Entity\Entity.cpp" />
+    <ClCompile Include="src\Entity\Player.cpp" />
+    <ClCompile Include="src\Extern\Config.cpp" />
+    <ClCompile Include="src\Extern\Context.cpp" />
+    <ClCompile Include="src\Inventory\Inventory.cpp" />
+    <ClCompile Include="src\Inventory\Slot.cpp" />
+    <ClCompile Include="src\Item\Item\Item.cpp" />
+    <ClCompile Include="src\Item\Material\Material.cpp" />
+    <ClCompile Include="src\Loader\ChunkMeshBuilder.cpp" />
+    <ClCompile Include="src\Loader\Loader.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Math\NoiseGenerator.cpp" />
+    <ClCompile Include="src\Math\Ray.cpp" />
+    <ClCompile Include="src\Math\Vector2.cpp" />
+    <ClCompile Include="src\Renderer\BlockRenderer.cpp" />
+    <ClCompile Include="src\Renderer\BreakAnimRenderer.cpp" />
+    <ClCompile Include="src\Renderer\MasterRenderer.cpp" />
+    <ClCompile Include="src\Renderer\SFMLRenderer.cpp" />
+    <ClCompile Include="src\Renderer\SkyboxRenderer.cpp" />
+    <ClCompile Include="src\Renderer\WorldRenderer.cpp" />
+    <ClCompile Include="src\Shader\BaseShader.cpp" />
+    <ClCompile Include="src\States\Menu\MainMenu.cpp" />
+    <ClCompile Include="src\States\Menu\MenuNewWorld.cpp" />
+    <ClCompile Include="src\States\Menu\MenuWorldSelect.cpp" />
+    <ClCompile Include="src\States\Menu\PauseMenu.cpp" />
+    <ClCompile Include="src\States\PlayerInventory.cpp" />
+    <ClCompile Include="src\States\PlayingState.cpp" />
+    <ClCompile Include="src\Texture\Texture.cpp" />
+    <ClCompile Include="src\Texture\TextureAtlas.cpp" />
+    <ClCompile Include="src\Utils\FPSCounter.cpp" />
+    <ClCompile Include="src\Utils\Random.cpp" />
+    <ClCompile Include="src\Utils\ToggleKey.cpp" />
+    <ClCompile Include="src\Utils\UtilityFunctions.cpp" />
+    <ClCompile Include="src\World\Blocks\Block.cpp" />
+    <ClCompile Include="src\World\Building\Biome.cpp" />
+    <ClCompile Include="src\World\Building\Biomes.cpp" />
+    <ClCompile Include="src\World\Building\Structures\StructureBuilder.cpp" />
+    <ClCompile Include="src\World\Building\TerrainGenerator.cpp" />
+    <ClCompile Include="src\World\Chunk\Chunk.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level1</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="src\World\Chunk\ChunkManager.cpp" />
+    <ClCompile Include="src\World\Chunk\ChunkSection.cpp" />
+    <ClCompile Include="src\World\World.cpp" />
+    <ClCompile Include="src\World\WorldInfo\WorldInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Inventory\Craft3x3.h" />
+    <ClInclude Include="src\Model\Mesh.h" />
+    <ClInclude Include="src\Model\Model.h" />
+    <ClInclude Include="src\States\CraftingTable.h" />
+    <ClInclude Include="src\AABB\AABB.h" />
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\DataBase\DataBase.h" />
+    <ClInclude Include="src\DataBase\ID.h" />
+    <ClInclude Include="src\defines.h" />
+    <ClInclude Include="src\Entity\Camera.h" />
+    <ClInclude Include="src\Entity\Entity.h" />
+    <ClInclude Include="src\Entity\Player.h" />
+    <ClInclude Include="src\Extern\Config.h" />
+    <ClInclude Include="src\Extern\Context.h" />
+    <ClInclude Include="src\GUI\Button.h" />
+    <ClInclude Include="src\GUI\GUIComponent.h" />
+    <ClInclude Include="src\GUI\TextBox.h" />
+    <ClInclude Include="src\Inventory\Component.h" />
+    <ClInclude Include="src\Inventory\Craft2x2.h" />
+    <ClInclude Include="src\Inventory\Crafting\BaseRecepie.h" />
+    <ClInclude Include="src\Inventory\Crafting\Recepies.h" />
+    <ClInclude Include="src\Inventory\Inventory.h" />
+    <ClInclude Include="src\Inventory\Slot.h" />
+    <ClInclude Include="src\Item\Item\Item.h" />
+    <ClInclude Include="src\Item\Material\Material.h" />
+    <ClInclude Include="src\Loader\ChunkMeshBuilder.h" />
+    <ClInclude Include="src\Loader\Loader.h" />
+    <ClInclude Include="src\Math\Frustum.h" />
+    <ClInclude Include="src\Math\NoiseGenerator.h" />
+    <ClInclude Include="src\Math\PerlinNoise.h" />
+    <ClInclude Include="src\Math\Ray.h" />
+    <ClInclude Include="src\Math\Vector2.h" />
+    <ClInclude Include="src\Renderer\BlockRenderer.h" />
+    <ClInclude Include="src\Renderer\BreakAnimRenderer.h" />
+    <ClInclude Include="src\Renderer\MasterRenderer.h" />
+    <ClInclude Include="src\Renderer\SFMLRenderer.h" />
+    <ClInclude Include="src\Renderer\SkyboxRenderer.h" />
+    <ClInclude Include="src\Renderer\WorldRenderer.h" />
+    <ClInclude Include="src\Shader\BaseShader.h" />
+    <ClInclude Include="src\Shader\BasicShader.h" />
+    <ClInclude Include="src\Shader\LeaveShader.h" />
+    <ClInclude Include="src\Shader\SkyboxShader.h" />
+    <ClInclude Include="src\Shader\WaterShader.h" />
+    <ClInclude Include="src\Shader\WorldShader.h" />
+    <ClInclude Include="src\States\Menu\MainMenu.h" />
+    <ClInclude Include="src\States\Menu\MenuNewWorld.h" />
+    <ClInclude Include="src\States\Menu\MenuWorldSelect.h" />
+    <ClInclude Include="src\States\Menu\PauseMenu.h" />
+    <ClInclude Include="src\States\PlayerInventory.h" />
+    <ClInclude Include="src\States\PlayingState.h" />
+    <ClInclude Include="src\States\StateBase.h" />
+    <ClInclude Include="src\Texture\CubeTexture.h" />
+    <ClInclude Include="src\Texture\Texture.h" />
+    <ClInclude Include="src\Texture\TextureAtlas.h" />
+    <ClInclude Include="src\Utils\Array2D.h" />
+    <ClInclude Include="src\Utils\Array3D.h" />
+    <ClInclude Include="src\Utils\CopyInhertance.h" />
+    <ClInclude Include="src\Utils\FPSCounter.h" />
+    <ClInclude Include="src\Utils\Mutexes.h" />
+    <ClInclude Include="src\Utils\Random.h" />
+    <ClInclude Include="src\Utils\ToggleKey.h" />
+    <ClInclude Include="src\Utils\UtilityFunctions.h" />
+    <ClInclude Include="src\World\Blocks\Block.h" />
+    <ClInclude Include="src\World\Blocks\ChunkBlock.h" />
+    <ClInclude Include="src\World\Building\Biome.h" />
+    <ClInclude Include="src\World\Building\Biomes.h" />
+    <ClInclude Include="src\World\Building\Structures\StructureBuilder.h" />
+    <ClInclude Include="src\World\Building\TerrainGenerator.h" />
+    <ClInclude Include="src\World\Chunk\Chunk.h" />
+    <ClInclude Include="src\World\Chunk\ChunkManager.h" />
+    <ClInclude Include="src\World\Chunk\ChunkMesh.h" />
+    <ClInclude Include="src\World\Chunk\ChunkSection.h" />
+    <ClInclude Include="src\World\Events\BlockBreakEvent.h" />
+    <ClInclude Include="src\World\Events\BlockPlaceEvent.h" />
+    <ClInclude Include="src\World\Events\Event.h" />
+    <ClInclude Include="src\World\Events\WorldEvent.h" />
+    <ClInclude Include="src\World\World.h" />
+    <ClInclude Include="src\World\WorldInfo\WorldInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C72B4F64-A508-4595-8651-48E4092CEF87}</ProjectGuid>
+    <RootNamespace>Minecraft</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>deps/include/;src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>deps/lib/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;glew32s.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>deps/include/;src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>deps/include/;src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>deps/lib/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;glew32.lib;glew32s.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>deps/include/;src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;glew32s.lib;sfml-graphics.dll;sfml-system.dll;sfml-window.dll;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
